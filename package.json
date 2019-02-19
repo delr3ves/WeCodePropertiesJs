@@ -1,0 +1,33 @@
+{
+  "name": "WeCodePropertiesJS",
+  "version": "1.0.0",
+  "description": "JavaScript implementations of the .",
+  "main": "src/index.js",
+  "repository": "git@github.com:delr3ves/WeCodePropertiesJS.git",
+  "author": "delr3ves <sergio.arroyo.cuevas@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "scripts": {
+    "test": "mocha --recursive --require ./test/bootstrap.js --require babel-register",
+    "lint": "yarn eslint test",
+    "fix:lint": "yarn eslint test --fix",
+    "ci": "yarn install && yarn test && yarn lint"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "jsverify": "^0.8.3",
+    "mocha": "^4.0.1",
+    "mocha-eslint": "^4.1.0",
+    "prettier": "^1.7.4",
+    "prettier-eslint-cli": "^4.4.0",
+    "webpack": "^3.8.1"
+  }
+}
