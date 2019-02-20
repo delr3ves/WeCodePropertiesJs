@@ -44,7 +44,7 @@ git checkout scafolding
 
 ### Sum properties (15'):
 In this branch, you'll find the definition of each test we'll need to implement in order to test a sum.
-Just find the test in [WeCodePlayground.spec.js](test/WeCodePlayground.spec.Js)
+Just find the test in [WeCodePlayground.spec.js](test/WeCodePlayground.spec.js)
 
 ```
 git checkout sum-properties
@@ -56,7 +56,7 @@ git checkout sum-properties-solved
 
 ### Know your tooling (15')
 It's time to know about the internals of the library, so we'll just play with the tool.
-Just find the test in [PlayingWithLibrary.spec.js](test/PlayingWithLibrary.spec.Js)
+Just find the test in [PlayingWithLibrary.spec.js](test/PlayingWithLibrary.spec.js)
 
 ```
 git checkout playing-with-library
@@ -68,7 +68,7 @@ git checkout playing-with-library-solved
 
 ### Fibonacci properties (5'):
 What do you think is the main property fibonacci should keep?
-Find the test in [Fibonacci.spec.js](test/Fibonacci.spec.Js)
+Find the test in [Fibonacci.spec.js](test/Fibonacci.spec.js)
 
 ```
 git checkout fibonacci-properties
@@ -79,7 +79,7 @@ git checkout fibonacci-properties-solved
 
 ### Collection properties (20'):
 Lets find the main properties every collection should keep  
-Find the test in [Collections.spec.js](test/Collections.spec.Js)
+Find the test in [Collections.spec.js](test/Collections.spec.js)
 
 ```
 git checkout collection-properties
