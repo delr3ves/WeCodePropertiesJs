@@ -16,6 +16,21 @@ The most important thing you'll want to do with this project is just running the
 yarn test
 ```
 
+In case you want to run the tests using your IDE, you'll need to add ` --require ./test/bootstrap.js --require babel-register` flags to the mocha config. 
+
+In case you are a Intellij/Webstrom user, this is how I configured it:
+![](./art/confgure-mocha-intellij.png)
+
+
+**Or you can just add `require("./bootstrap");` as the first line of your test class and that's all :)**
+
+## Libraries: 
+
+To implement this project, we'll use:
+ * [mocha](https://mochajs.org/) as the runner
+ * [chai](https://www.chaijs.com) for assertions
+ * [jsverify](http://jsverify.github.io/) for properties. Here you can find how you can configure the properties. With this library is quite easy how to rerun the tests with the same seed to generate exactly the same tests between executions.
+
 ## Branches:
 
 This project contains a few branches in order to help you with irrelevant implementation details that could be time consuming but don't add any value to this Workshop.  
