@@ -1,23 +1,43 @@
-/*
 const sum = (a, b) => {
   return a + b;
 };
-*/
 
 describe("WeCodeProperties", () => {
-  it("keep the associative property", () => {
-    //TODO test the associative property
+  jsc.property(
+    "keep the associative property",
+    jsc.integer,
+    jsc.integer,
+    jsc.integer,
+    (a, b, c) => {
+      return sum(sum(a, b), c) == sum(a, sum(b, c));
+    }
+  );
+
+  jsc.property(
+    "keep the commutative property",
+    jsc.integer,
+    jsc.integer,
+    (a, b) => {
+      return sum(a, b) == sum(b, a);
+    }
+  );
+
+  jsc.property("have an identity value", jsc.integer, a => {
+    return sum(a, 0) == a;
   });
 
-  it("keep the commutative property", () => {
-    //TODO test the commutative property
-  });
+  const actualSumScenarios = [
+    [1, 4, 5],
+    [4, 5, 9],
+    [0, 0, 0],
+    [-1, -5, -6],
+    [1, -5, -4],
+    [-5, 1, -4]
+  ];
 
-  it("have an identity value", () => {
-    //TODO test the identity property
-  });
-
-  it("actually sum a couple numbers", () => {
-    //TODO test the sum, maybe you can create a table to test a few cases...
+  actualSumScenarios.forEach(([a, b, expected]) => {
+    it(`actually sum a couple numbers ${a} + ${b} should be ${expected}`, () => {
+      expect(sum(a, b)).to.equal(expected);
+    });
   });
 });
